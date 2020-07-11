@@ -18,15 +18,9 @@ public class Soltion {
         for(int i = 0; i < pushed.length; i++){
             helper.push(pushed[i]);
             while(!helper.empty() &&
-                    index < popped.length &&
                     helper.peek()==popped[index]){
                 helper.pop();
                 index++;
-            }
-        }
-        for(int i = index; i <popped.length; i++){
-            if(helper.peek()==popped[i]){
-                helper.pop();
             }
         }
 
